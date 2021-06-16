@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Toko Petani',
       theme: ThemeData(
+        fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
       home: DetailScreen(),
@@ -26,6 +27,7 @@ class DetailScreen extends StatelessWidget{
         child :Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Image.asset('images/farm-house.jpg'),
             Container(
             margin: EdgeInsets.all(16.0),
             child: Text(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:beritani/detail_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,13 +24,15 @@ class DetailScreen extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       body : SafeArea(
+        child: SingleChildScrollView(
         child :Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Image.asset('images/farm-house.jpg'),
             Container(
             margin: EdgeInsets.all(16.0),
             child: Text(
-                'Toko Petani Indonesia',
+                'Toko Pertanian Sahabat',
                 textAlign: TextAlign.center,
                 style : TextStyle (
                   fontSize: 30.0,
@@ -75,7 +78,41 @@ class DetailScreen extends StatelessWidget{
                 textAlign: TextAlign.center,
               )
             ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 50.0, horizontal:12.0 ),
+              height: 150,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  ClipRRect (
+                    borderRadius: BorderRadius.circular(20),
+                      child:Padding(
+                        padding: const EdgeInsets.all(4.0),
+                          child: Image.network('https://media-cdn.tripadvisor.com/media/photo-s/0d/7c/59/70/farmhouse-lembang.jpg'),
+                        ),
+                    ),
+
+                    ClipRRect (
+                    borderRadius: BorderRadius.circular(20),
+                      child:Padding(
+                        padding: const EdgeInsets.all(4.0),
+                          child: Image.network('https://media-cdn.tripadvisor.com/media/photo-w/13/f0/22/f6/photo3jpg.jpg'),
+                        ),
+                    ),
+
+                    ClipRRect (
+                    borderRadius: BorderRadius.circular(20),
+                      child:Padding(
+                        padding: const EdgeInsets.all(4.0),
+                          child: Image.network('https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+                        ),
+                    ),
+                    
+                ],
+              ),
+            ),
           ],
+        ),
         ),
       ),
     );
