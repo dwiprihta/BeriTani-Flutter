@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:beritani/detail_screen.dart';
-import 'package:beritani/model/tourism_place.dart';
+import 'package:beritani/model/animal.dart';
  
  
 class MainScreen extends StatelessWidget {
@@ -8,11 +8,11 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Wisata Bandung'),
+        title: Text('TokoReptil.Com'),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
-          final TourismPlace place = tourismPlaceList[index];
+          final Animal place = animalList[index];
           return InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -51,7 +51,7 @@ class MainScreen extends StatelessWidget {
             ),
           );
         },
-        itemCount: tourismPlaceList.length,
+        itemCount: animalList.length,
       ),
     );
   }

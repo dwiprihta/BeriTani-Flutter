@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:beritani/model/tourism_place.dart';
+import 'package:beritani/model/animal.dart';
  
 var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
  
 class DetailScreen extends StatelessWidget {
-  final TourismPlace place;
+  final Animal place;
  
   DetailScreen({required this.place});
  
