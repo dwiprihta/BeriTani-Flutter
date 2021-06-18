@@ -62,7 +62,7 @@ class DetailScreen extends StatelessWidget {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      Icon(Icons.calendar_today),
+                      Image.asset('images/alert.png', width: 40, height: 40),
                       SizedBox(height: 8.0),
                       Text(
                         place.openDays,
@@ -72,7 +72,7 @@ class DetailScreen extends StatelessWidget {
                   ),
                   Column(
                     children: <Widget>[
-                      Icon(Icons.access_time),
+                      Image.asset('images/delivery.png', width: 40, height: 40),
                       SizedBox(height: 8.0),
                       Text(
                         place.openTime,
@@ -82,7 +82,7 @@ class DetailScreen extends StatelessWidget {
                   ),
                   Column(
                     children: <Widget>[
-                      Icon(Icons.monetization_on),
+                       Image.asset('images/coin.png', width: 40, height: 40),
                       SizedBox(height: 8.0),
                       Text(
                         place.ticketPrice,

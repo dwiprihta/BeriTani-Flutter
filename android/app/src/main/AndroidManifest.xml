@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.beritani">
    <application
-        android:label="beritani"
+        android:label="Toko Reptil"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
